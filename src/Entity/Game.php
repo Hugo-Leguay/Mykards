@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -21,6 +23,39 @@ class Game
      */
     private $Name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="id")
+     */
+
+    private $idUser;
+
+
+//    private $id_Game;
+//
+//    public function __construct()
+//    {
+//        $this->id_Game = new ArrayCollection();
+//    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+
+    /**
+     * @param mixed $idUser
+     */
+
+    public function setIdUser($idUser): void
+    {
+        $this->idUser = $idUser;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -37,4 +72,35 @@ class Game
 
         return $this;
     }
+
+//    /**
+//     * @return Collection|Cards[]
+//     */
+//    public function getIdGame(): Collection
+//    {
+//        return $this->id_Game;
+//    }
+//
+//    public function addIdGame(Cards $idGame): self
+//    {
+//        if (!$this->id_Game->contains($idGame)) {
+//            $this->id_Game[] = $idGame;
+//            $idGame->setGame($this);
+//        }
+//
+//        return $this;
+//    }
+//
+//    public function removeIdGame(Cards $idGame): self
+//    {
+//        if ($this->id_Game->contains($idGame)) {
+//            $this->id_Game->removeElement($idGame);
+//            // set the owning side to null (unless already changed)
+//            if ($idGame->getGame() === $this) {
+//                $idGame->setGame(null);
+//            }
+//        }
+//
+//        return $this;
+//    }
 }

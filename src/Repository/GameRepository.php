@@ -19,32 +19,68 @@ class GameRepository extends ServiceEntityRepository
         parent::__construct($registry, Game::class);
     }
 
-    // /**
-    //  * @return Game[] Returns an array of Game objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('g')
-            ->andWhere('g.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('g.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Game
-    {
-        return $this->createQueryBuilder('g')
-            ->andWhere('g.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
+//    public function findLastGame(){
+//
+//        return $this->createQueryBuilder('a')
+//            ->orderBy('a.id_user_id', 'ASC')
+//            ->setMaxResults(10)
+//            ->getQuery()
+//            ->getResult();
+//    }
+//
+//    /**
+//     * retour des jeux créés
+//     *
+//     * @return mixed
+//     */
+
+
+//    public function findCreatedGame(){
+//
+//
+//        return ($queryBuilder = $this->createQueryBuilder('a'))
+//            ->where($queryBuilder->expr()->eq('a.state', ':state'))
+//            ->setParameter('state', true)
+//            ->getQuery()
+//            ->getResult();
+//    }
+
+    // /**
+
+
+
+
+
+
+
+
+//    /**
+//    //  * @return Game[] Returns an array of Game objects
+//    //  */
+//
+//    public function findByExampleField($value)
+//    {
+//        return $this->createQueryBuilder('g')
+//            ->andWhere('g.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->orderBy('g.id', 'ASC')
+//            ->setMaxResults(10)
+//            ->getQuery()
+//            ->getResult()
+//        ;
+//    }
+//
+//
+//
+//    public function findOneBySomeField($value): ?Game
+//    {
+//        return $this->createQueryBuilder('g')
+//            ->andWhere('g.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->getQuery()
+//            ->getOneOrNullResult()
+//        ;
+//    }
+
 }

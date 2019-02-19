@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}MyKards!{% endblock %}
 
 {% block body %}
 <style>
@@ -9,12 +9,19 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Bienvenu sur le site My Kards!</h1>
 
-    This friendly message is coming from:
+
+
+    <nav class="Menu">
     <ul>
-        <li>Your controller at <code><a href="{{ '/home/stagiaire/Bureau/mykards/Mykards/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/stagiaire/Bureau/mykards/Mykards/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
+        <li><a href="/cards/new">Produits</a></li>
+        <li>Devis</li>
+        <li>Echantillons</li>
+        <li>Contact</li>
+        <li>Envoyer Fichier</li>
     </ul>
+    </nav>
+
 </div>
 {% endblock %}

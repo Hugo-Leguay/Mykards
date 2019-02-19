@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ImageCards{% endblock %}
+
+{% block body %}
+    <h1>Créer une nouvelle Image</h1>
+
+    {{ include('image_cards/_form.html.twig') }}
+
+    <a href="{{ path('image_cards_index') }}">Retour à la liste</a>
+{% endblock %}
