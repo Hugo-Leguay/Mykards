@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Entity\Game;
-use App\Entity\User;
 use App\Form\GameType;
 use App\Repository\GameRepository;
 use App\Repository\UserRepository;
@@ -30,12 +29,8 @@ class GameController extends AbstractController
     /**
      * @Route("/new", name="game_new", methods={"GET","POST"})
      */
-    public function new(Request $request, User $users): Response
+    public function new(Request $request, UserRepository $userRepository): Response
     {
-//        $userRepository = new UserRepository();
-//        $user = $userRepository->findAll();
-        var_dump($users);die;
-
         $game = new Game();
         $form = $this->createForm(GameType::class, $game);
         $form->handleRequest($request);
@@ -51,6 +46,7 @@ class GameController extends AbstractController
         return $this->render('game/new.html.twig', [
             'game' => $game,
             'form' => $form->createView(),
+            'users' => $userRepository->findAll(),
         ]);
     }
 

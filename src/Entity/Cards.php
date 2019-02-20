@@ -23,10 +23,6 @@ class Cards
      */
     private $Type;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Image;
 
     /**
      * @ORM\ManyToOne(targetEntity=Game::class, inversedBy="id")
@@ -63,17 +59,7 @@ class Cards
         return $this;
     }
 
-    public function getImage(): ?string
-    {
-        return $this->Image;
-    }
 
-    public function setImage(string $Image): self
-    {
-        $this->Image = $Image;
-
-        return $this;
-    }
 
     public function getGame(): ?Game
     {
