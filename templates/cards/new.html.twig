@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Cards{% endblock %}
+
+{% block body %}
+
+    {{ include('cards/_form.html.twig') }}
+
+    <h1>MyKards</h1>
+    <img class="logocards1" alt="cartes" src="https://cdn4.iconfinder.com/data/icons/casino-royale/512/cards_01-512.png">
+    <form>
+        <div class="cards">
+
+            <div class="namecards">
+                <label for="as">
+                    <p>As</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="as" name="as" accept="image/png, image/jpeg">
+            </div>
+
+
+            <div class="namecards">
+                <label for="roi">
+                    <p>Roi</p>
+                    <img  class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="roi" name="roi" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="dame">
+                    <p>Dame</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="dame" name="dame" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="valet">
+                    <p>Valet</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="valet" name="valet" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="10">
+                    <p>10</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="10" name="10" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="9">
+                    <p>9</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="9" name="9" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="8">
+                    <p>8</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+                <input type="file" id="8" name="8" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="namecards">
+                <label for="7">
+                    <p>7</p>
+                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                </label>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <a href="#">J'ai fini !</a>
+    </form>
+
+
+    <a href="{{ path('cards_index') }}">Retour à la liste</a>
+
+{% endblock %}

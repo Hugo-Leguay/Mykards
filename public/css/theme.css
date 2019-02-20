@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+body {
+    background-image: url('https://wallpaperhd.guru/wp-content/uploads/2017/04/wallpaper.wiki-HD-Vintage-Wallpaper-For-Desktop-PIC-WPD004712.jpg');
+    background-size: cover;
+    
+
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    /* text-shadow: -3px 0 grey, 0 0 grey, 0 0 grey, 0 0 grey; */
+
+    
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.logocards {
+
+    height: auto;
+    width: 400px;
+    
+
+}
+
+.logocards1 {
+    height: auto;
+    width: 250px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 280px; */
+    
+    /* margin-bottom: 800px; */
+}
+
+
+.img1 {
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60mm;
+    width: 40mm;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+
+.button {
+    font-size: 2em;
+    height: auto;
+    width: 280px;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: white;
+    border-radius: 20px;
+    /* background-image: url('https://us.123rf.com/450wm/davidzydd/davidzydd1511/davidzydd151101523/47958785-casta%C3%B1os-sin-fisuras-patr%C3%B3n-de-estrella-de-dise%C3%B1o-de-vectores-de-fondo.jpg?ver=6'); */
+    background: none;
+    border: none;
+    
+    
+ 
+   
+}
+
+.button:hover {
+    font-size: 2em;
+    height: auto;
+    width: 280px;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: white;
+    border-radius: 20px;
+    /* background-image: url('https://us.123rf.com/450wm/davidzydd/davidzydd1511/davidzydd151101523/47958785-casta%C3%B1os-sin-fisuras-patr%C3%B3n-de-estrella-de-dise%C3%B1o-de-vectores-de-fondo.jpg?ver=6'); */
+    background: none;
+    box-shadow: 10px 5px 5px black;
+    border: none;
+}
+
+
+.img1:hover {
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60.5mm;
+    width: 40.5mm;
+    box-shadow: 10px 5px 5px black;
+    transition-duration: 0.1s;
+    opacity:0.9;
+ 
+   
+}
+
+a {
+    color: white;
+    font-size: 2em;
+}
+
+a:hover {
+    color: skyblue;
+    font-size: 2em;
+}
