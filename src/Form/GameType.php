@@ -17,7 +17,7 @@ class GameType extends AbstractType
         $builder
             ->add('Name')
             ->add('idUser', EntityType::class, [
-                'label' => 'form.user.label',
+                'label' => 'utilisateur',
                 'class' => User::class,
                 'choice_label' => 'Name',
                 'query_builder' => function (EntityRepository $er) {

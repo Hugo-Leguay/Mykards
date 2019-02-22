@@ -28,7 +28,7 @@ class CardsController extends AbstractController
     /**
      * @Route("/new", name="cards_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, CardsRepository $cardsRepository): Response
     {
         $card = new Cards();
         $form = $this->createForm(CardsType::class, $card);
@@ -39,12 +39,13 @@ class CardsController extends AbstractController
             $entityManager->persist($card);
             $entityManager->flush();
 
-            return $this->redirectToRoute('cards_index');
+            return $this->redirectToRoute('current_cards_index');
         }
 
         return $this->render('cards/new.html.twig', [
             'card' => $card,
             'form' => $form->createView(),
+
         ]);
     }
 

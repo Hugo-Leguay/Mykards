@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CurrentCards index{% endblock %}
+
+{% block body %}
+    <h1>CurrentCards index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NameCard</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+
+
+
+        <tbody>
+        {% for current_card in current_cards %}
+            <tr>
+                <td>{{ current_card.id }}</td>
+                <td>{{ current_card.NameCard }}</td>
+                <td>
+                    <a href="{{ path('current_cards_show', {'id': current_card.id}) }}">Voir</a>
+                    <a href="{{ path('current_cards_edit', {'id': current_card.id}) }}">Editer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('current_cards_new') }}">Create new</a>
+{% endblock %}

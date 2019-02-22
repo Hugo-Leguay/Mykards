@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CurrentCards{% endblock %}
+
+{% block body %}
+    <h1>Liste des Cartes</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ current_card.id }}</td>
+            </tr>
+            <tr>
+                <th>NameCard</th>
+                <td>{{ current_card.NameCard }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('current_cards_index') }}">Retour à la liste</a>
+
+    <a href="{{ path('current_cards_edit', {'id': current_card.id}) }}">Editer</a>
+
+    {{ include('current_cards/_delete_form.html.twig') }}
+{% endblock %}

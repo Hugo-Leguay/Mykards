@@ -8,7 +8,7 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Id  </th>
                 <td>{{ user.id }}</td>
             </tr>
             <tr>
@@ -30,11 +30,11 @@
         </tbody>
     </table>
 
-    <a href="{{ path('user_index') }}">Retour à la liste</a>
+    <a class="message" href="{{ path('user_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('user_edit', {'id': user.id}) }}">Editer</a>
+    <a class="message" href="{{ path('user_edit', {'id': user.id}) }}">Editer</a>
 
-    <a href="{{ path('game_new', {'id': user.id}) }}">Créer un nouveau Jeu</
+    <a class="message" href="{{ path('game_new', {'id': user.id}) }}">Créer un nouveau Jeu</
 
     {{ include('user/_delete_form.html.twig') }}
 {% endblock %}

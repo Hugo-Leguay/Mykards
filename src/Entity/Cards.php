@@ -18,11 +18,6 @@ class Cards
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Type;
-
 
     /**
      * @ORM\ManyToOne(targetEntity=Game::class, inversedBy="id")
@@ -35,30 +30,21 @@ class Cards
      */
     private $idCards;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\CurrentCards", inversedBy="currentCards")
+     */
+    private $currentCards;
+
     public function __construct()
     {
         $this->idCards = new ArrayCollection();
     }
 
 
-
     public function getId(): ?int
     {
         return $this->id;
     }
-
-    public function getType(): ?string
-    {
-        return $this->Type;
-    }
-
-    public function setType(string $Type): self
-    {
-        $this->Type = $Type;
-
-        return $this;
-    }
-
 
 
     public function getGame(): ?Game
@@ -100,6 +86,18 @@ class Cards
                 $idCard->setCards(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getCurrentCards(): ?CurrentCards
+    {
+        return $this->currentCards;
+    }
+
+    public function setCurrentCards(?CurrentCards $currentCards): self
+    {
+        $this->currentCards = $currentCards;
 
         return $this;
     }
