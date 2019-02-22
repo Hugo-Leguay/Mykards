@@ -23,14 +23,6 @@ class ImageCards
      */
     private $Image;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Cards", inversedBy="idCards")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $cards;
-
-
-
     public function getId(): ?int
     {
         return $this->id;

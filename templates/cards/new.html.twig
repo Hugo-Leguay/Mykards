@@ -8,83 +8,88 @@
 
     <h1>MyKards</h1>
 
-
+    {#{{ dump(currentCards) }}#}
+    {#<form method="post">#}
+        {#{% for currentCard in currentCards %}#}
+            {#<li>{{ currentCard.nameCard }}</li>#}
+        {#{% endfor %}#}
+    {#</form>#}
     <img class="logocards1" alt="cartes" src="https://cdn4.iconfinder.com/data/icons/casino-royale/512/cards_01-512.png">
-    <form method="post" action="index.html.twig">
-        <div class="headscards">
+    {#<form method="post" action="index.html.twig">#}
+        {#<div class="headscards">#}
 
-            <figure class="namecards">
-                <label for="as">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>As</figcaption>
-                </label>
-                <input type="file" id="as" name="as" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="as">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>As</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="as" name="as" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
 
-            <figure class="namecards">
-                <label for="roi">
-                    <img  class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>Roi</figcaption>
-                </label>
-                <input type="file" id="roi" name="roi" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="roi">#}
+                    {#<img  class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>Roi</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="roi" name="roi" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
-            <figure class="namecards">
-                <label for="dame">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>Dame</figcaption>
-                </label>
-                <input type="file" id="dame" name="dame" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="dame">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>Dame</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="dame" name="dame" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
-            <figure class="namecards">
-                <label for="valet">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>Valet</figcaption>
-                </label>
-                <input type="file" id="valet" name="valet" accept="image/png, image/jpeg">
-            </figure>
-        </div>
-        <div class="numbercards">
-            <figure class="namecards">
-                <label for="10">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>10</figcaption>
-                </label>
-                <input type="file" id="10" name="10" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="valet">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>Valet</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="valet" name="valet" accept="image/png, image/jpeg">#}
+            {#</figure>#}
+        {#</div>#}
+        {#<div class="numbercards">#}
+            {#<figure class="namecards">#}
+                {#<label for="10">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>10</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="10" name="10" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
-            <figure class="namecards">
-                <label for="9">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>9</figcaption>
-                </label>
-                <input type="file" id="9" name="9" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="9">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>9</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="9" name="9" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
-            <figure class="namecards">
-                <label for="8">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>8</figcaption>
-                </label>
-                <input type="file" id="8" name="8" accept="image/png, image/jpeg">
-            </figure>
+            {#<figure class="namecards">#}
+                {#<label for="8">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>8</figcaption>#}
+                {#</label>#}
+                {#<input type="file" id="8" name="8" accept="image/png, image/jpeg">#}
+            {#</figure>#}
 
-            <figure class="namecards">
-                <label for="7">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
-                    <figcaption>7</figcaption>
-                </label>
-                    <input type="file" id="8" name="8" accept="image/png, image/jpeg">
-            </figure>
-        </div>
+            {#<figure class="namecards">#}
+                {#<label for="7">#}
+                    {#<img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">#}
+                    {#<figcaption>7</figcaption>#}
+                {#</label>#}
+                    {#<input type="file" id="8" name="8" accept="image/png, image/jpeg">#}
+            {#</figure>#}
+        {#</div>#}
 
-        <br>
-        <br>
+        {#<br>#}
+        {#<br>#}
 
-        <a href="{{ path('cards_index') }}">J'ai fini !</a>
-    </form>
+        {#<a href="{{ path('cards_index') }}">J'ai fini !</a>#}
+    {#</form>#}
 
 
     <a href="{{ path('cards_index') }}">Retour à la liste</a>

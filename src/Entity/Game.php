@@ -29,15 +29,6 @@ class Game
 
     private $idUser;
 
-
-//    private $id_Game;
-//
-//    public function __construct()
-//    {
-//        $this->id_Game = new ArrayCollection();
-//    }
-
-
     /**
      * @return mixed
      */

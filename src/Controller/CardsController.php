@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\Cards;
 use App\Form\CardsType;
 use App\Repository\CardsRepository;
+use App\Repository\CurrentCardsRepository;
+use App\Repository\GameRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,10 +30,14 @@ class CardsController extends AbstractController
     /**
      * @Route("/new", name="cards_new", methods={"GET","POST"})
      */
-    public function new(Request $request, CardsRepository $cardsRepository): Response
-    {
+    public function new(
+        Request $request,
+        CurrentCardsRepository $currentCardsRepository,
+        GameRepository $gameRepository
+    ): Response {
         $card = new Cards();
         $form = $this->createForm(CardsType::class, $card);
+        dump($request);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -45,7 +51,8 @@ class CardsController extends AbstractController
         return $this->render('cards/new.html.twig', [
             'card' => $card,
             'form' => $form->createView(),
-
+            'currentCards' => $currentCardsRepository->findAll(),
+            'game' => $gameRepository->findAll(),
         ]);
     }
 

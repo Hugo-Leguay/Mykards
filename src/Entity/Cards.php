@@ -26,18 +26,21 @@ class Cards
     private $game;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\ImageCards", mappedBy="cards")
+     * @ORM\Column(type="array")
+     * @ORM\OneToOne(targetEntity="App\Entity\ImageCards", cascade={"persist", "remove"})
      */
-    private $idCards;
+    private $imageCard;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\CurrentCards", inversedBy="currentCards")
+     * @ORM\ManyToMany(targetEntity="App\Entity\CurrentCards", inversedBy="cards")
      */
     private $currentCards;
 
     public function __construct()
     {
         $this->idCards = new ArrayCollection();
+        $this->imageCards = new ArrayCollection();
+        $this->currentCards = new ArrayCollection();
     }
 
 
@@ -59,50 +62,41 @@ class Cards
         return $this;
     }
 
+    public function getImageCard(): ?ImageCards
+    {
+        return $this->imageCard;
+    }
+
+    public function setImageCard(?ImageCards $imageCard): self
+    {
+        $this->imageCard = $imageCard;
+
+        return $this;
+    }
+
     /**
-     * @return Collection|ImageCards[]
+     * @return Collection|CurrentCards[]
      */
-    public function getIdCards(): Collection
-    {
-        return $this->idCards;
-    }
-
-    public function addIdCard(ImageCards $idCard): self
-    {
-        if (!$this->idCards->contains($idCard)) {
-            $this->idCards[] = $idCard;
-            $idCard->setCards($this);
-        }
-
-        return $this;
-    }
-
-    public function removeIdCard(ImageCards $idCard): self
-    {
-        if ($this->idCards->contains($idCard)) {
-            $this->idCards->removeElement($idCard);
-            // set the owning side to null (unless already changed)
-            if ($idCard->getCards() === $this) {
-                $idCard->setCards(null);
-            }
-        }
-
-        return $this;
-    }
-
-    public function getCurrentCards(): ?CurrentCards
+    public function getCurrentCards(): Collection
     {
         return $this->currentCards;
     }
 
-    public function setCurrentCards(?CurrentCards $currentCards): self
+    public function addCurrentCard(CurrentCards $currentCard): self
     {
-        $this->currentCards = $currentCards;
+        if (!$this->currentCards->contains($currentCard)) {
+            $this->currentCards[] = $currentCard;
+        }
 
         return $this;
     }
 
+    public function removeCurrentCard(CurrentCards $currentCard): self
+    {
+        if ($this->currentCards->contains($currentCard)) {
+            $this->currentCards->removeElement($currentCard);
+        }
 
-
-    
+        return $this;
+    }
 }

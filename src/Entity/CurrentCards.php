@@ -24,13 +24,14 @@ class CurrentCards
     private $NameCard;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Cards", mappedBy="currentCards")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Cards", mappedBy="currentCards")
      */
-    private $currentCards;
+    private $cards;
 
     public function __construct()
     {
         $this->currentCards = new ArrayCollection();
+        $this->cards = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -53,29 +54,26 @@ class CurrentCards
     /**
      * @return Collection|Cards[]
      */
-    public function getCurrentCards(): Collection
+    public function getCards(): Collection
     {
-        return $this->currentCards;
+        return $this->cards;
     }
 
-    public function addCurrentCard(Cards $currentCard): self
+    public function addCard(Cards $card): self
     {
-        if (!$this->currentCards->contains($currentCard)) {
-            $this->currentCards[] = $currentCard;
-            $currentCard->setCurrentCards($this);
+        if (!$this->cards->contains($card)) {
+            $this->cards[] = $card;
+            $card->addCurrentCard($this);
         }
 
         return $this;
     }
 
-    public function removeCurrentCard(Cards $currentCard): self
+    public function removeCard(Cards $card): self
     {
-        if ($this->currentCards->contains($currentCard)) {
-            $this->currentCards->removeElement($currentCard);
-            // set the owning side to null (unless already changed)
-            if ($currentCard->getCurrentCards() === $this) {
-                $currentCard->setCurrentCards(null);
-            }
+        if ($this->cards->contains($card)) {
+            $this->cards->removeElement($card);
+            $card->removeCurrentCard($this);
         }
 
         return $this;
