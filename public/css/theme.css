@@ -1,17 +1,25 @@
 * {
     padding: 0;
-    margin: 0;
     text-decoration: none;
 
 }
 
+.message {
+    font-size: 1em;
+    color: white;
+}
+
+/*.message1 {*/
+    /*float: right;*/
+/*}*/
+
 body {
     background-image: url('https://wallpaperhd.guru/wp-content/uploads/2017/04/wallpaper.wiki-HD-Vintage-Wallpaper-For-Desktop-PIC-WPD004712.jpg');
     background-size: cover;
-    
-
+    height: auto;
+    width: 100%;
     font-family: 'ZCOOL KuaiLe', cursive;
-
+    line-height: 2em;
 
     font-size: 2em;
     text-align: center;
@@ -22,8 +30,12 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
+}
+
+th {
+    margin-right: 2px;
 }
 
 .logocards {
@@ -39,7 +51,7 @@ h1 {
     width: 250px;
 }
 
-.cards {
+.headscards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,17 +59,22 @@ h1 {
     
     /* margin-bottom: 800px; */
 }
-
+.numbercards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .img1 {
+    margin-top: 20px;
     border-radius: 20px;
     /* border : solid red 5px; */
-    height: 60mm;
-    width: 40mm;
+    height: 180px;
+    width: 140px;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 0.5em;
 }
 
 
@@ -95,24 +112,22 @@ p {
 }
 
 
-.img1:hover {
-    border-radius: 20px;
-    /* border : solid red 5px; */
-    height: 60.5mm;
-    width: 40.5mm;
-    box-shadow: 10px 5px 5px black;
-    transition-duration: 0.1s;
-    opacity:0.9;
- 
-   
-}
+/*.img1:hover {*/
+    /*border-radius: 20px;*/
+    /*!* border : solid red 5px; *!*/
+    /*height: 60.5mm;*/
+    /*width: 40.5mm;*/
+    /*box-shadow: 10px 5px 5px black;*/
+    /*transition-duration: 0.1s;*/
+    /*opacity:0.9;*/
+/*}*/
 
 a {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
 }
 
-a:hover {
-    color: skyblue;
-    font-size: 2em;
-}
+/*a:hover {*/
+    /*color: skyblue;*/
+    /*font-size: 10px;*/
+/*}*/

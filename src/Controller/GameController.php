@@ -40,7 +40,7 @@ class GameController extends AbstractController
             $entityManager->persist($game);
             $entityManager->flush();
 
-            return $this->redirectToRoute('game_index');
+            return $this->redirectToRoute('cards_new');
         }
 
         return $this->render('game/new.html.twig', [

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CurrentCards{% endblock %}
+
+{% block body %}
+    <h1>Créer des nouvelles Cartes</h1>
+
+
+    {{ include('current_cards/_form.html.twig') }}
+
+
+
+
+    {#{{ dump(currentCards) }}#}
+
+        <a href="{{ path('current_cards_index') }}">Retour à la liste</a>
+{% endblock %}

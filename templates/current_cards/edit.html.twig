@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit CurrentCards{% endblock %}
+
+{% block body %}
+    <h1>Editer les Cartes</h1>
+
+    {{ include('current_cards/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('current_cards_index') }}">Retour à la liste</a>
+
+    {{ include('current_cards/_delete_form.html.twig') }}
+{% endblock %}
