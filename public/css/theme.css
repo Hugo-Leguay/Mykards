@@ -112,22 +112,22 @@ p {
 }
 
 
-/*.img1:hover {*/
-    /*border-radius: 20px;*/
-    /*!* border : solid red 5px; *!*/
-    /*height: 60.5mm;*/
-    /*width: 40.5mm;*/
-    /*box-shadow: 10px 5px 5px black;*/
-    /*transition-duration: 0.1s;*/
-    /*opacity:0.9;*/
-/*}*/
+/* .img1:hover {
+    border-radius: 20px;
+    border : solid red 5px; 
+    height: 60.5mm;
+    width: 40.5mm;
+    box-shadow: 10px 5px 5px black;
+    transition-duration: 0.1s;
+    opacity:0.9;
+} */
 
 a {
     color: white;
     font-size: 1em;
 }
 
-/*a:hover {*/
-    /*color: skyblue;*/
-    /*font-size: 10px;*/
-/*}*/
+/* a:hover {
+    color: skyblue;
+    font-size: 10px;
+} */
