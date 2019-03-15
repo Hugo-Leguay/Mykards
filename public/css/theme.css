@@ -3,7 +3,9 @@
     text-decoration: none;
 
 }
-
+.img1 {
+    cursor: pointer;
+}
 .message {
     font-size: 1em;
     color: white;
