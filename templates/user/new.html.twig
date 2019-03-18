@@ -3,6 +3,7 @@
 {% block title %}New User{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Nouvel utilisateur</h1>
 
 
@@ -10,8 +11,6 @@
     {{ include('user/_form.html.twig') }}
 
 
-    <a class="message" href="{{ path('user_index') }}">Retour à la liste</a>
-
-    <a class="message1" href="{{ path('game_new') }}">Déjà Inscrit</a>
+    <a class="message1" href="{{ path('game_new') }}">Déjà Inscrit ?</a>
 
 {% endblock %}
