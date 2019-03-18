@@ -1,14 +1,18 @@
 * {
     padding: 0;
+    margin: 0;
     text-decoration: none;
+   color: white;
+
 
 }
 .img1 {
     cursor: pointer;
+    border: pink solid 5px;
 }
 .message {
     font-size: 1em;
-    color: white;
+    color: pink;
 }
 
 /*.message1 {*/
@@ -16,34 +20,39 @@
 /*}*/
 
 body {
-    background-image: url('https://wallpaperhd.guru/wp-content/uploads/2017/04/wallpaper.wiki-HD-Vintage-Wallpaper-For-Desktop-PIC-WPD004712.jpg');
+    background-image: url('https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
+    /* background: no-repeat; */
+    /* position: fixed;
+    background-position: initial; */
+    background-attachment: fixed;
+    background-position: center; 
+   
+  
     height: auto;
     width: 100%;
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'Amatic SC', cursive;
     line-height: 2em;
 
     font-size: 2em;
     text-align: center;
-    color: white;
+   color: white;
     /* text-shadow: -3px 0 grey, 0 0 grey, 0 0 grey, 0 0 grey; */
 
     
 }
 
-h1 {
-    font-size: 1.5em;
-    text-align: center;
-}
+
 
 th {
-    margin-right: 2px;
+    /* margin-right: 2px; */
 }
 
 .logocards {
 
     height: auto;
     width: 400px;
+    border: solid red 20px;
     
 
 }
@@ -51,13 +60,14 @@ th {
 .logocards1 {
     height: auto;
     width: 250px;
+    
 }
 
 .headscards {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 280px; */
+    /* margin-top: -13px; */
     
     /* margin-bottom: 800px; */
 }
@@ -68,17 +78,21 @@ th {
 }
 
 .img1 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 20px;
     /* border : solid red 5px; */
-    height: 180px;
-    width: 140px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
 }
 
 p {
     font-size: 0.5em;
+    
 }
 
+a {
+    color: pink;
+}
 
 .button {
     font-size: 2em;
@@ -87,7 +101,7 @@ p {
     font-family: 'Handlee', cursive;
     text-align: center;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: white;
+    color: pink;
     border-radius: 20px;
     /* background-image: url('https://us.123rf.com/450wm/davidzydd/davidzydd1511/davidzydd151101523/47958785-casta%C3%B1os-sin-fisuras-patr%C3%B3n-de-estrella-de-dise%C3%B1o-de-vectores-de-fondo.jpg?ver=6'); */
     background: none;
@@ -98,6 +112,8 @@ p {
    
 }
 
+
+
 .button:hover {
     font-size: 2em;
     height: auto;
@@ -105,7 +121,7 @@ p {
     font-family: 'Handlee', cursive;
     text-align: center;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: white;
+   color: white;
     border-radius: 20px;
     /* background-image: url('https://us.123rf.com/450wm/davidzydd/davidzydd1511/davidzydd151101523/47958785-casta%C3%B1os-sin-fisuras-patr%C3%B3n-de-estrella-de-dise%C3%B1o-de-vectores-de-fondo.jpg?ver=6'); */
     background: none;
@@ -125,11 +141,36 @@ p {
 } */
 
 a {
-    color: white;
+ 
     font-size: 1em;
+    
 }
 
 /* a:hover {
     color: skyblue;
     font-size: 10px;
 } */
+
+figcaption {
+   color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: pink;
+}
+
+.bloc {
+    margin-top:-190px;
+    display: flex;
+}
+
+a:hover {
+    color: white;
+}
+
+input {
+    color: black;
+    
+}
