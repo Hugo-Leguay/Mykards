@@ -3,10 +3,95 @@
 {% block title %}New Cards{% endblock %}
 
 {% block body %}
-
-    {{ include('cards/_form.html.twig') }}
+{# 
+    {{ include('cards/_form.html.twig') }} #}
 
     <h1>MyKards</h1>
+    <head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+   
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
+   
+   
+   
+  <style type='text/css'> 
+  </style>
+  </head>
+  <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+             
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+             
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+});//]]> 
+
+
+$(window).load(function(){
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+             
+            reader.onload = function (e) {
+                $('#blah2').attr('src', e.target.result);
+            }
+             
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    $("#imgInp2").change(function(){
+        readURL(this);
+    });
+});//]]>
+
+$(window).load(function(){
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+             
+            reader.onload = function (e) {
+                $('#blah3').attr('src', e.target.result);
+            }
+             
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    $("#imgInp3").change(function(){
+        readURL(this);
+    });
+});//]]> 
+
+$(window).load(function(){
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+             
+            reader.onload = function (e) {
+                $('#blah4').attr('src', e.target.result);
+            }
+             
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    $("#imgInp4").change(function(){
+        readURL(this);
+    });
+});//]]> 
+ 
+</script>
 
     {#{{ dump(currentCards) }}#}
     {#<form method="post">#}
@@ -14,13 +99,46 @@
             {#<li>{{ currentCard.nameCard }}</li>#}
         {#{% endfor %}#}
     {#</form>#}
-    <img class="logocards1" alt="cartes" src="https://cdn4.iconfinder.com/data/icons/casino-royale/512/cards_01-512.png">
-    <form method="post" action="index.html.twig">
+    {# <img class="logocards1" alt="cartes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/SVG_black_joker.svg/220px-SVG_black_joker.svg.png"> #}
+    <body>
+    <div class="headscards">
+      <form id="form1" runat="server">
+        <input type='file' id="imgInp" />
+        <img  class="img1" id="blah" src="#" alt="your image" />
+    </form>
+
+  <body>
+      <form id="form1" runat="server">
+        <input type='file' id="imgInp2" />
+        <img class="img1" id="blah2" src="#" alt="your image" />
+    </form>
+
+      <body>
+      <form id="form1" runat="server">
+        <input type='file' id="imgInp3" />
+        <img class="img1" id="blah3" src="#" alt="your image" />
+    </form>
+
+      <body>
+      <form id="form1" runat="server">
+        <input type='file' id="imgInp4" />
+        <img class="img1" id="blah4" src="#" alt="your image" />
+    </form>
+    </div>
+<div class="headscards">
+      <body>
+      <form id="form1" runat="server">
+        <input type='file' id="imgInp" />
+        <img class="img1" id="blah" src="#" alt="your image" />
+        </div>
+    </form>
+    
+    {# <form method="post" action="index.html.twig">
         <div class="headscards">
 
             <figure class="namecards">
                 <label for="as">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>As</figcaption>
                 </label>
                 <input type="file" id="as" style="visibility:hidden" name="as" accept="image/png, image/jpeg">
@@ -29,7 +147,7 @@
 
             <figure class="namecards">
                 <label for="roi">
-                    <img  class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img  class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>Roi</figcaption>
                 </label>
                 <input type="file" id="roi" style="visibility:hidden" name="roi" accept="image/png, image/jpeg">
@@ -37,7 +155,7 @@
 
             <figure class="namecards">
                 <label for="dame">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>Dame</figcaption>
                 </label>
                 <input type="file" id="dame" style="visibility:hidden" name="dame" accept="image/png, image/jpeg">
@@ -45,7 +163,7 @@
 
             <figure class="namecards">
                 <label for="valet">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>Valet</figcaption>
                 </label>
                 <input type="file" id="valet" style="visibility:hidden" name="valet" accept="image/png, image/jpeg">
@@ -54,7 +172,7 @@
         <div class="numbercards">
             <figure class="namecards">
                 <label for="10">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>10</figcaption>
                 </label>
                 <input type="file" id="10" style="visibility:hidden" name="10" accept="image/png, image/jpeg">
@@ -62,7 +180,7 @@
 
             <figure class="namecards">
                 <label for="9">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>9</figcaption>
                 </label>
                 <input type="file" style="visibility:hidden" id="9" name="9" accept="image/png, image/jpeg">
@@ -71,7 +189,7 @@
 
             <figure class="namecards">
                 <label for="8">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>8</figcaption>
                 </label>
                 <input type="file" id="8" style="visibility:hidden" name="8" accept="image/png, image/jpeg">
@@ -79,20 +197,21 @@
 
             <figure class="namecards">
                 <label for="7">
-                    <img class="img1" alt="image_carte" src="https://www.clipartmax.com/png/small/42-428626_casino-king-las-vegas-playing-card-royalty-suit-playing-cards-king-drawing.png">
+                    <img class="img1" alt="image_carte" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Poker-sm-221-Ah.png">
                     <figcaption>7</figcaption>
                 </label>
                     <input type="file" id="8" style="visibility:hidden" name="8" accept="image/png, image/jpeg">
             </figure>
-        </div>
+        </div> #}
 
         <br>
         <br>
-
+<div class="bloc">
         <a href="#">J'ai fini !</a>
+        <br>
     </form>
-
-
+    
     <a href="{{ path('cards_index') }}">Retour à la liste</a>
+    </div>
 
 {% endblock %}
