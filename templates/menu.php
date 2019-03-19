@@ -33,7 +33,7 @@ echo <!DOCTYPE html>
       <li class="sub-menu-parent" tab-index="0">
        <a href="#">Connexion</a>
        <ul class="sub-menu">
-         <li><a href="#">Se connecter</a></li>
+         <li><a href="/connexion/new">Se connecter</a></li>
          <li><a href="/user/new">S inscrire</a></li>
        </ul></li>
    </ul>
