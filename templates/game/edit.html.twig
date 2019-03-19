@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Game{% endblock %}
+{% block title %}My Kards !{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Editer le Jeu</h1>
 
     {{ include('game/_form.html.twig', {'button_label': 'Update'}) }}
