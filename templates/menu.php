@@ -16,10 +16,10 @@ echo <!DOCTYPE html>
      <li class="sub-menu-parent" tab-index="0">
        <a href="#">Créer un jeu</a>
        <ul class="sub-menu">
-         <li><a href="#">52 Cartes</a></li>
-         <li><a href="#">36 Cartes</a></li>
-         <li><a href="#">UNO</a></li>
-         <li><a href="#">7 familles</a></li>
+         <li><a href="/game/new">52 Cartes</a></li>
+         <li><a href="/game/new">36 Cartes</a></li>
+         <li><a href="/game/new">UNO</a></li>
+         <li><a href="/game/new">7 familles</a></li>
        </ul>
      </li>
      <li class="sub-menu-parent" tab-index="0">

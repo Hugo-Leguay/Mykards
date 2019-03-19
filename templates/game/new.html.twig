@@ -3,6 +3,7 @@
 {% block title %}New Game{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Créer un nouveau Jeu</h1>
 
     {{ include('game/_form.html.twig') }}
