@@ -6,9 +6,40 @@
 
 
 }
-.img1 {
+#blah {
     cursor: pointer;
     border: pink solid 5px;
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah2 {
+    cursor: pointer;
+    border: pink solid 5px;
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah3 {
+    cursor: pointer;
+    border: pink solid 5px;
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah4 {
+    cursor: pointer;
+    border: pink solid 5px;
+    border-radius: 20px;
+    /* border : solid red 5px; */
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
 }
 .message {
     font-size: 1em;
@@ -20,7 +51,7 @@
 /*}*/
 
 body {
-    background-image: url('https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     /* background: no-repeat; */
     /* position: fixed;
@@ -77,7 +108,7 @@ th {
     align-items: center;
 }
 
-.img1 {
+.img1  {
     /* margin-top: 20px; */
     border-radius: 20px;
     /* border : solid red 5px; */
@@ -174,3 +205,25 @@ input {
     color: black;
     
 }
+
+.imglistener {
+     /* margin-top: 20px; */
+     border-radius: 20px;
+     border : solid pink 5px;
+     height: 60.6666666667mm;
+     width: 39.3333333333mm;
+}
+
+.inputimg {
+   
+    display: none;
+}
+
+#cards {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
