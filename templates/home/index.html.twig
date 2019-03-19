@@ -2,14 +2,117 @@
 
 {% block title %}MyKards!{% endblock %}
 
-
 {% block body %}
 {% include('/menu.php') %}
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/index.home.css') }}">
 
-    <h1>MyKards</h1>
+    <section class="slider-pages" style="margin-left: 200px; margin-top: 45px;">
 
-   
-    <br>
-    <a class="message" href="{{ path('user_new') }}" >Personnaliser mon jeux !</a>
+  <article class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
+    <div class="slider-page slider-page--left">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+        </div>
+        
+      </div>
+      
+    </div>
 
+    <div class="slider-page slider-page--right">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+          <h1 class="slider-page__title slider-page__title--big">
+            My Kards !  Créez votre propre jeu de cartes !
+          </h1>
+          <!-- /.slider-page__title slider-page__title--big -->
+          <h2 class="slider-page__title">
+            Sélectionnez vos images
+          </h2>
+          <!-- /.slider-page__title -->
+          <p class="slider-page__description">
+            Scrollez vers le bas ou la fléche du bas 
+          </p>
+          <!-- /.slider-page__description -->
+        </div>
+        <!-- /.slider-page__content -->
+      </div>
+      <!-- /.slider-page--skew -->
+    </div>
+    <!-- /.slider-page slider-page--right -->
+  </article>
+  <!-- /.js-scrolling__page js-scrolling__page-1 js-scrolling--active -->
+
+
+  <article class="js-scrolling__page js-scrolling__page-2">
+    <div class="slider-page slider-page--left">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+          <h1 class="slider-page__title">
+            Commandez !
+          </h1>
+          <!-- /.slider-page__title -->
+          <p class="slider-page__description">
+            Expéditions en 48 h !
+          </p>
+          <!-- /.slider-page__description -->
+        </div>
+        <!-- /.slider-page__content -->
+      </div>
+      <!-- /.slider-page--skew -->
+    </div>
+    <!-- /.slider-page slider-page--left -->
+
+    <div class="slider-page slider-page--right">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+        </div>
+        <!-- /.slider-page__content -->
+      </div>
+      <!-- /.slider-page--skew -->
+    </div>
+    <!-- /.slider-page slider-page--right -->
+  </article>
+  <!-- /.js-scrolling__page js-scrolling__page-2 -->
+
+
+  <article class="js-scrolling__page js-scrolling__page-3">
+    <div class="slider-page slider-page--left">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+        </div>
+        <!-- /.slider-page__content -->
+      </div>
+      <!-- /.slider-page--skew -->
+    </div>
+    <!-- /.slider-page slider-page--left -->
+
+    <div class="slider-page slider-page--right">
+      <div class="slider-page--skew">
+        <div class="slider-page__content">
+          <h1 class="slider-page__title">
+            Puis Jouez avec vos amis !
+          </h1>
+          <!-- /.slider-page__title -->
+          <p class="slider-page__description">
+            Pour connaître nos dernière infos suivez nous sur <a class="slider-page__link" href="https://twitter.com/letempledujeu?lang=fr"
+                                         target="_blank">Twitter</a>
+            et sur <a class="slider-page__link" href="https://www.instagram.com/both_sides_of_my_table/?hl=fr"
+                            target="_blank">Instagram</a>
+          </p>
+          <!-- /.slider-page__description -->
+        </div>
+        <!-- /.slider-page__content -->
+      </div>
+      <!-- /.slider-page--skew -->
+    </div>
+    <!-- /.slider-page slider-page--right -->
+  </article>
+  <!-- /.js-scrolling__page js-scrolling__page-3 -->
+
+</section>
+<!-- /.slider-pages -->
+
+{% block javascript %}
+<script type="text/javascript" src="{{ asset('index.home.js') }}"></script>
+{% endblock %}
 {% endblock %}
