@@ -1,23 +1,16 @@
 <?php 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/c
-ss" href="{{ asset('/css/menu.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/menu.css') }}">
 </head>
-
 <body>
-
 <nav>
-
    <ul style="width: 1755px;">
-
-     <li class="sub-menu-parent" tab-in
-dex="0">
+     <li class="sub-menu-parent" tab-index="0">
        <a href="/home">Accueil</a>
      </li>
      <li class="sub-menu-parent" tab-index="0">
