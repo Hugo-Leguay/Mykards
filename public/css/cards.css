@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+   color: white;
+
+
+}
+#blah {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah2 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah3 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah4 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah5 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+#blah6 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+
+#blah7 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+
+#blah8 {
+    cursor: pointer;
+    /* border: white solid 5px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+
+.message {
+    font-size: 1em;
+    color: skyblue;
+}
+
+/*.message1 {*/
+    /*float: right;*/
+/*}*/
+
+body {
+    background-image: url('https://66.media.tumblr.com/9a433e84fa05b60d86b26f15289021ba/tumblr_os5h6etgpz1uzwgsuo1_400.gif');
+    background-size: cover;
+    /* background: no-repeat; */
+    /* position: fixed;
+    background-position: initial; */
+    background-attachment: fixed;
+    background-position: center; 
+   
+  
+    height: auto;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    line-height: 2em;
+
+    font-size: 2em;
+    text-align: center;
+   color: white;
+    /* text-shadow: -3px 0 grey, 0 0 grey, 0 0 grey, 0 0 grey; */
+
+    
+}
+
+
+
+th {
+    /* margin-right: 2px; */
+}
+
+.logocards {
+
+    height: auto;
+    width: 400px;
+    border: solid red 20px;
+    
+
+}
+
+.logocards1 {
+    height: auto;
+    width: 250px;
+    
+}
+
+.headscards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: -13px; */
+    
+    /* margin-bottom: 800px; */
+}
+.numbercards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img1  {
+    /* margin-top: 20px; */
+    border-radius: 15px;
+    border : solid white 5px;
+    height: 60.6666666667mm;
+    width: 39.3333333333mm;
+}
+
+p {
+
+    
+}
+
+
+.button {
+    font-size: 2em;
+    height: auto;
+    width: 280px;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: skyblue;
+    border-radius: 15px;
+    background: none;
+    border: none;
+    
+    
+ 
+   
+}
+
+
+
+.button:hover {
+    font-size: 2em;
+    height: auto;
+    width: 280px;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+   color: white;
+    border-radius: 15px;
+    background: none;
+    box-shadow: 10px 5px 5px black;
+    border: none;
+}
+
+
+
+
+strong {
+    font-size: 0.9em;
+    color: orangered;
+}
+
+strong:hover {
+    font-size: 0.9em;
+    color: skyblue;
+}
+
+.omg1 {
+    font-size: 0.7em;
+    color: blue;
+}
+
+.omg1:hover {
+    font-size: 0.7em;
+    color: skyblue;
+}
+
+
+
+h1 {
+    font-size: 1.7em;
+    text-align: center;
+    color: orangered;
+}
+
+figcaption {
+   color: white;
+}
+
+
+/* #link {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-color: skyblue;
+     /* border-radius: 15px; */
+
+ 
+
+
+.bloc {
+    margin-top:-190px;
+    display: flex;
+}
+
+a:hover {
+    color: white;
+}
+
+input {
+    color: black;
+    
+}
+
+.imglistener {
+
+     border-radius: 15px;
+     border : solid skyblue 5px;
+     height: 60.6666666667mm;
+     width: 39.3333333333mm;
+}
+
+.inputimg {
+   
+    display: none;
+}
+
+#cards {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#cards2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.twitter {
+    height: auto;
+    width: 90px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid white 3px;
+}
+
+#facebook {
+    height: auto;
+    width: 90px;
+}
+
+
