@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion index{% endblock %}
+
+{% block body %}
+    <h1>Connexion index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Utilisateur</th>
+                <th>Mot_de_passe</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for connexion in connexions %}
+            <tr>
+                <td>{{ connexion.id }}</td>
+                <td>{{ connexion.utilisateur }}</td>
+                <td>{{ connexion.motDePasse }}</td>
+                <td>
+                    <a href="{{ path('connexion_show', {'id': connexion.id}) }}">Voir</a>
+                    <a href="{{ path('connexion_edit', {'id': connexion.id}) }}">Editer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('connexion_new') }}">Connexion</a>
+{% endblock %}

@@ -16,8 +16,8 @@ echo <!DOCTYPE html>
      <li class="sub-menu-parent" tab-index="0">
        <a href="#">Créer un jeu</a>
        <ul class="sub-menu">
-         <li><a href="#">52 Cartes</a></li>
-         <li><a href="#">36 Cartes</a></li>
+         <li><a href="/game/new">52 Cartes</a></li>
+         <li><a href="/game/new">36 Cartes</a></li>
          <li><a href="#">UNO</a></li>
          <li><a href="#">7 familles</a></li>
        </ul>
@@ -33,7 +33,7 @@ echo <!DOCTYPE html>
       <li class="sub-menu-parent" tab-index="0">
        <a href="#">Connexion</a>
        <ul class="sub-menu">
-         <li><a href="#">Se connecter</a></li>
+         <li><a href="/connexion/new">Se connecter</a></li>
          <li><a href="/user/new">S inscrire</a></li>
        </ul></li>
    </ul>
