@@ -21,8 +21,9 @@ class CardsController extends AbstractController
      * @Route("/", name="cards_index", methods={"GET"})
      */
     public function index(CardsRepository $cardsRepository): Response
-    {
+    {  dump('rien');
         return $this->render('cards/index.html.twig', [
+
             'cards' => $cardsRepository->findAll(),
         ]);
     }
