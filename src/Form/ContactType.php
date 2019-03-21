@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Contact;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -14,7 +15,7 @@ class ContactType extends AbstractType
         $builder
             ->add('Email')
             ->add('Objet')
-            ->add('Message')
+            ->add('Message', TextareaType::class)
         ;
     }
 
