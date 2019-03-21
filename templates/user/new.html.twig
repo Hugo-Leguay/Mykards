@@ -10,7 +10,24 @@
 
     {{ include('user/_form.html.twig') }}
 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/captcha.css') }}">
+
+<div class="captchaContainer">
+  <div class="captchaWrapper">
+    <button type="button" class="captchaBox boxHover"></button>
+  </div>
+  <input type="checkbox" name="hiddenCaptcha" id="hiddenCaptcha" disabled="disabled"/>
+  <label for="hiddenCaptcha" class="captchaLabel">I'm not a robot</label>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
 
     <a class="message1" href="{{ path('game_new') }}">Déjà Inscrit ?</a>
+
+{% block javascript %}
+    <script  src="{{ asset('captcha.js') }}"></script>
+{% endblock %}
 
 {% endblock %}
