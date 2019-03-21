@@ -3,6 +3,7 @@
 {% block title %}Edit User{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Editer Utilisateur</h1>
 
     {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}

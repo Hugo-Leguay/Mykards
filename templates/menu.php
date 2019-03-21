@@ -1,5 +1,7 @@
 <?php 
+
  <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,8 +20,8 @@
        <ul class="sub-menu">
          <li><a href="/game/new">52 Cartes</a></li>
          <li><a href="/game/new">36 Cartes</a></li>
-         <li><a href="#">UNO</a></li>
-         <li><a href="#">7 familles</a></li>
+         <li><a href="/game/new">UNO</a></li>
+         <li><a href="/game/new">7 familles</a></li>
        </ul>
      </li>
      <li class="sub-menu-parent" tab-index="0">

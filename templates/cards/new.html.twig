@@ -102,7 +102,7 @@ $(window).load(function(){
     {#</form>#}
     {# <img class="logocards1" alt="cartes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/SVG_black_joker.svg/220px-SVG_black_joker.svg.png"> #}
     <body>
-    <div class="headscards">
+    {# <div class="headscards">
       <form id="form1" runat="server">
         <input type='file' id="imgInp" />
         <img  class="img1" id="blah" src="#" alt="your image" />
@@ -132,9 +132,9 @@ $(window).load(function(){
         <input type='file' id="imgInp" />
         <img class="img1" id="blah" src="#" alt="your image" />
         </div>
-    </form>
+    </form> #}
     
-    {# <form method="post" action="index.html.twig">
+    <form method="post" action="index.html.twig">
         <div class="headscards">
 
             <figure class="namecards">
@@ -203,16 +203,16 @@ $(window).load(function(){
                 </label>
                     <input type="file" id="8" style="visibility:hidden" name="8" accept="image/png, image/jpeg">
             </figure>
-        </div> #}
+        </div>
+</form>
+        <br>
+        <br>
 
+        <a href="{{ path('home') }}">J'ai fini !</a>
         <br>
-        <br>
-<div class="bloc">
-        <a href="#">J'ai fini !</a>
-        <br>
-    </form>
     
-    <a href="{{ path('cards_index') }}">Retour à la liste</a>
-    </div>
+    
+    <a href="{{ path('home') }}">Retour</a>
+    
 
 {% endblock %}

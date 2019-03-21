@@ -3,6 +3,7 @@
 {% block title %}Edit Cards{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Editer les Cartes</h1>
 
     {{ include('cards/_form.html.twig', {'button_label': 'Update'}) }}

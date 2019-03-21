@@ -6,10 +6,7 @@
 
 
 }
-.img1 {
-    cursor: pointer;
-    border: pink solid 5px;
-}
+
 .message {
     font-size: 1em;
     color: pink;
@@ -20,7 +17,7 @@
 /*}*/
 
 body {
-    background-image: url('https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
     background-size: cover;
     /* background: no-repeat; */
     /* position: fixed;
@@ -83,6 +80,8 @@ th {
     /* border : solid red 5px; */
     height: 60.6666666667mm;
     width: 39.3333333333mm;
+    cursor: pointer;
+    border: pink solid 5px;
 }
 
 p {
@@ -161,10 +160,10 @@ h1 {
     color: pink;
 }
 
-.bloc {
+/* .bloc {
     margin-top:-190px;
     display: flex;
-}
+} */
 
 a:hover {
     color: white;
@@ -176,6 +175,12 @@ input {
 }
 button {
     color: black;
+<<<<<<< HEAD
 }
 
 
+||||||| merged common ancestors
+}
+=======
+}
+>>>>>>> master
