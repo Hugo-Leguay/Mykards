@@ -30,7 +30,7 @@
          <li><a href="#">L équipe</a></li>
          <li><a href="#">Nous contacter</a></li>
          <li><a href="#">C.G.U</a></li>
-         <li><a href="#">Informations légales</a></li>
+         <li><a href="/html/infosLegales">Informations légales</a></li>
        </ul></li>
       <li class="sub-menu-parent" tab-index="0">
        <a href="#">Connexion</a>
