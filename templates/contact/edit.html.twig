@@ -3,6 +3,7 @@
 {% block title %}Edit Contact{% endblock %}
 
 {% block body %}
+{% include('/menu.php') %}
     <h1>Edit Contact</h1>
 
     {{ include('contact/_form.html.twig', {'button_label': 'Update'}) }}

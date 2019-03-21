@@ -4,10 +4,11 @@
 {% block title %}New Contact{% endblock %}
 
 {% block body %}
+{% include ('/menu.php') %}
 <link rel="stylesheet" type="text/css" href="{{ asset('/css/index.home.css') }}">
     <h1>Votre Message</h1>
 
     {{ include('contact/_form.html.twig') }}
 
-    <a href="{{ path('contact_index') }}">back to list</a>
+    <a href="{{ path('contact_index') }}">Accueil</a>
 {% endblock %}
