@@ -27,9 +27,9 @@
      <li class="sub-menu-parent" tab-index="0">
        <a href="#">A propos</a>
        <ul class="sub-menu">
-         <li><a href="#">L équipe</a></li>
+         <li><a href="/team">L équipe</a></li>
          <li><a href="/contact/new">Nous contacter</a></li>
-         <li><a href="#">C.G.U</a></li>
+         <li><a href="/cgv">C.G.V</a></li>
          <li><a href="/infos/legales">Informations légales</a></li>
        </ul></li>
       <li class="sub-menu-parent" tab-index="0">
